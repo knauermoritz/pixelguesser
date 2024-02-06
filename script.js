@@ -52,7 +52,7 @@ document.querySelector(".backButton").addEventListener("click", () => {
 
 
 function setGoal() {
-  goal = Math.floor(Math.random() * 100950)
+  goal = Math.floor(Math.random() * 100000)
   const goalElement = document.createElement("p");
   goalElement.innerHTML = `Das Ziel ist, es ${goal} Pixel zu scrollen. Die Seite ist 100.000 Pixel groß`;
   text.appendChild(goalElement);
