@@ -16,7 +16,7 @@ document.addEventListener("scrollend", (event) => {
     const scrollDistance = window.scrollY;
     const difference = Math.abs(goal - scrollDistance);
     let resultText = 'Fast';
-    if (difference < 300) {
+    if (difference < 2000) {
 			document.getElementById('fireworks').classList.remove('hide')
       resultText = 'Super, sie sind sehr nah dran';
       document.getElementById('fireworks').classList.remove('hide')
