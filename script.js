@@ -52,9 +52,9 @@ document.querySelector(".backButton").addEventListener("click", () => {
 
 
 function setGoal() {
-  goal = Math.floor(Math.random() * 10000)
+  goal = Math.floor(Math.random() * 100)
   const goalElement = document.createElement("p");
-  goalElement.innerHTML = `Das Ziel ist, es ${goal} Pixel zu scrollen`;
+  goalElement.innerHTML = `Das Ziel ist, es ${goal} Pixel zu scrollen. Die Seite ist 100.000 Pixel groß`;
   text.appendChild(goalElement);
   resetButton.classList.add("hide");
   scrolled = false;
